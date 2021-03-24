@@ -56,3 +56,16 @@ a {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+/* Love Hate ACRONYM */
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;    
+}
+/* END OF LOVE HATE ACRONYM */
