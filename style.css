@@ -133,7 +133,11 @@ a:active {
     cursor: pointer;
 }
 
-
+.modal-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
 
 
 /* Media Query: Large Smartphone(vertical) */
