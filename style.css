@@ -162,6 +162,22 @@ h3 {
   outline: none;
 }
 
+.form-label {
+    color: var(--primary-color);
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background: var(--primary-color);
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+}
+
 
 
 /* Media Query: Large Smartphone(vertical) */
