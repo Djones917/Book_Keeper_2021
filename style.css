@@ -179,7 +179,11 @@ button {
 }
 
 button:hover {
-    
+    filter: brightness(110%);
+}
+
+button:focus {
+    outline: none;
 }
 
 
