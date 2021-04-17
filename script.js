@@ -1,1 +1,3 @@
-console.log('Connected!');
+const modal = document.getElementById('modal');
+
+console.log(modal);
