@@ -13,3 +13,4 @@ function showModal() {
 }
 
 // Modal Event Listeners
+modalShow.addEventListener('click', showModal);
