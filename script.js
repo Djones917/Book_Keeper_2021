@@ -19,8 +19,9 @@ window.addEventListener('click', (e) => (e.target === modal ? modal.classList.re
 
 // Handle Data From Form
 function storeBookmark(e) {
-     console.log(e);
-     preventDefault();
+    e.preventDefault();
+    const nameValue = websiteNameEl.value;
+    let urlValue = websiteUrlEl.value;  
 }
 
 // Event Listeners
