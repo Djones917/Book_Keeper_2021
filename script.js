@@ -21,7 +21,8 @@ window.addEventListener('click', (e) => (e.target === modal ? modal.classList.re
 function storeBookmark(e) {
     e.preventDefault();
     const nameValue = websiteNameEl.value;
-    let urlValue = websiteUrlEl.value;  
+    let urlValue = websiteUrlEl.value;
+    console.log(nameValue, urlValue);  
 }
 
 // Event Listeners
