@@ -22,6 +22,9 @@ function storeBookmark(e) {
     e.preventDefault();
     const nameValue = websiteNameEl.value;
     let urlValue = websiteUrlEl.value;
+    if (!urlValue.includes('http://', 'https://')) {
+        urlValue = `https://${urlValue}`;
+    }
     console.log(nameValue, urlValue);  
 }
 
