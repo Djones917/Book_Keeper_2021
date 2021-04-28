@@ -26,6 +26,7 @@ function validate(nameValue, urlValue) {
    }
    if (!urlValue.match(regex)) {
     alert('Please provide a valid web address!');
+    return false;
  }
 }
 
