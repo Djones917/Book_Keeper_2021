@@ -45,11 +45,18 @@ function storeBookmark(e) {
     let urlValue = websiteUrlEl.value;
     if (!urlValue.includes('http://', 'https://')) {
         urlValue = `https://${urlValue}`;
-    }
-    console.log(nameValue, urlValue);  
+    }    
     if (!validate(nameValue, urlValue)) {
        return false;
     }
+    const bookmark = {
+        name: nameValue,
+        url: urlValue,
+    };
+    bookmarks.push(bookmark);
+    console.log(bookmarks);
+    bookmarkForm.reset();
+    websiteNameEl.focus();
 }
 
 // Event Listeners
