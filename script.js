@@ -38,6 +38,11 @@ function validate(nameValue, urlValue) {
  return true;
 }
 
+// Fetch Bookmars
+function fetchBookmarks() {
+    
+}
+
 // Handle Data From Form
 function storeBookmark(e) {
     e.preventDefault();
@@ -54,7 +59,7 @@ function storeBookmark(e) {
         url: urlValue,
     };
     bookmarks.push(bookmark);
-    console.log(bookmarks);
+    console.log(bookmarks, JSON.stringify( bookmarks));
     localStorage.setItem('bookmarks', JSON.stringify( bookmarks));
     bookmarkForm.reset();
     websiteNameEl.focus();
