@@ -71,8 +71,7 @@ function storeBookmark(e) {
         name: nameValue,
         url: urlValue,
     };
-    bookmarks.push(bookmark);
-    console.log(bookmarks, JSON.stringify( bookmarks));
+    bookmarks.push(bookmark);   
     localStorage.setItem('bookmarks', JSON.stringify( bookmarks));
     bookmarkForm.reset();
     websiteNameEl.focus();
