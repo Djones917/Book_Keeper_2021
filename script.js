@@ -40,7 +40,20 @@ function validate(nameValue, urlValue) {
 
 // Fetch Bookmars
 function fetchBookmarks() {
-    
+    // Get Bookmarks From Local Storage If Available
+    if (localStorage.getItem('bookmarks')) {
+       bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+    } else {
+        // Create bookmarks array in local storage
+        bookmarks = [
+            {
+              name: 'Your Site',
+              url: 'https://www.brvmuseum.com',
+            },
+        ];
+        localStorage.setItem('bookmarks', JSON.stringify('bookmarks'));
+    }
+    console.log(bookmarks);
 }
 
 // Handle Data From Form
