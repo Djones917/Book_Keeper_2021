@@ -73,9 +73,13 @@ function storeBookmark(e) {
     };
     bookmarks.push(bookmark);   
     localStorage.setItem('bookmarks', JSON.stringify( bookmarks));
+    fetchBookmarks();
     bookmarkForm.reset();
     websiteNameEl.focus();
 }
 
 // Event Listeners
 bookmarkForm.addEventListener('submit', storeBookmark);
+
+// On Load, Fetch Bookmarks
+fetchBookmarks();
