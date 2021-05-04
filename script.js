@@ -41,6 +41,16 @@ function validate(nameValue, urlValue) {
 }
 
 
+// Build Bookmarks DOM
+function buildBookmarks() {
+    // Build Items
+    bookmarks.forEach((bookmark) => {
+       const { name, url } = bookmark;
+       console.log(name, url);
+    });
+}
+
+
 // Fetch Bookmars
 function fetchBookmarks() {
     // Get Bookmarks From Local Storage If Available
