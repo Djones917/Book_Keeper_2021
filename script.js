@@ -16,10 +16,12 @@ function showModal() {
     websiteNameEl.focus();
 }
 
+
 // Modal Event Listeners
 modalShow.addEventListener('click', showModal);
 modalClose.addEventListener('click', () => modal.classList.remove('show-modal'));
 window.addEventListener('click', (e) => (e.target === modal ? modal.classList.remove('show-modal') : false));
+
 
 // Validate Form
 function validate(nameValue, urlValue) {
@@ -38,6 +40,7 @@ function validate(nameValue, urlValue) {
  return true;
 }
 
+
 // Fetch Bookmars
 function fetchBookmarks() {
     // Get Bookmarks From Local Storage If Available
@@ -53,8 +56,9 @@ function fetchBookmarks() {
         ];
         localStorage.setItem('bookmarks', JSON.stringify('bookmarks'));
     }
-    console.log(bookmarks);
+    buildBookmarks();
 }
+
 
 // Handle Data From Form
 function storeBookmark(e) {
@@ -78,8 +82,10 @@ function storeBookmark(e) {
     websiteNameEl.focus();
 }
 
+
 // Event Listeners
 bookmarkForm.addEventListener('submit', storeBookmark);
+
 
 // On Load, Fetch Bookmarks
 fetchBookmarks();
