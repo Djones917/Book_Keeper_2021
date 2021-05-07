@@ -55,7 +55,11 @@ function buildBookmarks() {
        closeIcon.setAttribute('title', 'Delete Bookmark');
        closeIcon.setAttribute('onclick', `deleteBookmark('${url}')`);
        // Favicon / Link Container
-
+       const linkInfo = document.createElement('div');
+       linkInfo.classList.add('name');
+       // Favicon
+       const favicon = document.createElement('img');
+       favicon.setAttribute('');      
     });
 }
 
