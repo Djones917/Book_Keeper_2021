@@ -95,6 +95,12 @@ function fetchBookmarks() {
 }
 
 
+// Delete Bookmark
+function deleteBookmark(url) {
+   console.log('Delete Bookmark', url);
+}
+
+
 // Handle Data From Form
 function storeBookmark(e) {
     e.preventDefault();
