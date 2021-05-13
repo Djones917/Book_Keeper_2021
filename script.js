@@ -97,7 +97,7 @@ function fetchBookmarks() {
 
 // Delete Bookmark
 function deleteBookmark(url) {
-   console.log('Delete Bookmark', url);
+   console.log('Delete URL', url);
 }
 
 
