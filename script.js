@@ -97,7 +97,14 @@ function fetchBookmarks() {
 
 // Delete Bookmark
 function deleteBookmark(url) {
-   console.log('Delete URL', url);
+   bookmarks.forEach((bookmark, i) => {
+      if (bookmark.url === url) {
+          bookmarks.splice(i, 1);
+      }
+   });
+   // Update Bookmarks Storage in Local Storage, re-populate DOM
+   localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+   fetchBookmarks();
 }
 
 
